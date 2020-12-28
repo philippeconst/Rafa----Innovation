@@ -343,7 +343,7 @@ li {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
+  height: 35vh;
   background: url("../img/AdobeStock_276492948.jpeg") top center no-repeat;
   background-size: cover;
   position: relative;
@@ -371,13 +371,13 @@ li {
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
-  margin-top: 8%;
+  margin-top: -2%;
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
   font-family: "Poppins", sans-serif;
-  font-size: 55px;
+  font-size: 46px;
   letter-spacing: 4px;
   font-weight: 600;
   line-height: 60px;
@@ -392,7 +392,7 @@ li {
 }
 
 #hero img {
-  width: 15%;
+  width: 20%;
 }
 
 @media (min-width: 1024px) {
@@ -413,6 +413,10 @@ li {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+
+  #hero img {
+    width: 50%;
   }
 }
 
@@ -582,7 +586,7 @@ section {
 
 /*--------------------------------------------------------------
 # Services
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .services {
   padding-bottom: 40px;
 }
@@ -674,6 +678,78 @@ section {
 
 .services .card:hover .card-body .card-title {
   color: #0B0B3B;
+} */
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services {
+  padding-bottom: 30px;
+}
+
+.services .icon-box {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.services .icon {
+  display: flex;
+  justify-content: center;
+}
+
+.services .icon i {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: #0B0B3B;
+  font-size: 40px;
+  overflow: hidden;
+  padding-top: 20px;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.services .icon-box:hover .icon i {
+  box-shadow: 0px 0 30px rgba(66, 139, 202, 0.5);
+}
+
+.services .title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.services .section-title {
+  color: #0B0B3B;
+}
+
+.services .title a {
+  color: #444;
+  transition: 0.3s;
+}
+
+.services .title a:hover {
+  color: #428bca;
+}
+
+.services .title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #428bca;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.services .description {
+  line-height: 24px;
+  font-size: 14px;
 }
 
 
